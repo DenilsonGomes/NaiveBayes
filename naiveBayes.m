@@ -78,7 +78,9 @@ for f=1:10
     treino4 = [a4 b4];
     treino4(1 + (f-1)*100 : f*100, :) = [];
     
-    %--- Naive Bayes ---
+    %Naive Bayes 
+    %(múltiplas classes equiprováveis)
+    %(atributos contínuos, gaussianos, descorrelacionados e com mesma variança)
     %zerando os acertos
     acertos1 = 0;
     acertos2 = 0;
@@ -110,3 +112,13 @@ for f=1:10
     acertos3Total = acertos3Total + acertos3; %acerto classe 3 total
     acertos4Total = acertos4Total + acertos4; %acerto classe 4 total
 end
+%printa os resultados das predições
+disp('Acurácias obtidas com 10-Fold do Naive Bayes'); %exibe a mensagem acima
+str = ['Taxa de acerto da classe1: ' num2str(acertos1Total/1000)];
+disp(str); %exibe a mensagem acima
+str = ['Taxa de acerto da classe2: ' num2str(acertos2Total/1000)];
+disp(str); %exibe a mensagem acima
+str = ['Taxa de acerto da classe3: ' num2str(acertos3Total/1000)];
+disp(str); %exibe a mensagem acima
+str = ['Taxa de acerto da classe4: ' num2str(acertos4Total/1000)];
+disp(str); %exibe a mensagem acima
