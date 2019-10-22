@@ -23,22 +23,22 @@ b3 = randn(1000,1) + 7; %atributo b
 a4 = randn(1000,1) + 7; %atributo a
 b4 = randn(1000,1) + 7; %atributo b
 
-%garantir exatamente o mesmo desvio padrão para todos os atributos
+%garantir exatamente o mesmo desvio padrão para todos os atributos = 1
 %--- Classe 1 -----
-% a1 = a1/std(a1); %atributo a
-% b1 = b1/std(b1); %atributo b
-% 
-% %--- Classe 2 -----
-% a2 = a2/std(a2); %atributo a
-% b2 = b2/std(b2); %atributo b
-% 
-% %--- Classe 3 -----
-% a3 = a3/std(a3); %atributo a
-% b3 = b3/std(b3); %atributo b
-% 
-% %--- Classe 4 -----
-% a4 = a4/std(a4); %atributo a
-% b4 = b4/std(b4); %atributo b
+a1 = a1/std(a1); %atributo a
+b1 = b1/std(b1); %atributo b
+
+%--- Classe 2 -----
+a2 = a2/std(a2); %atributo a
+b2 = b2/std(b2); %atributo b
+
+%--- Classe 3 -----
+a3 = a3/std(a3); %atributo a
+b3 = b3/std(b3); %atributo b
+
+%--- Classe 4 -----
+a4 = a4/std(a4); %atributo a
+b4 = b4/std(b4); %atributo b
 
 %plota os dados
 plot(a1,b1,'*r') %classe 1 em vermelho
